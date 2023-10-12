@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "steam-user": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/steam-user": "^4.26.5"
+  }
+}

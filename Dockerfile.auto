@@ -1,0 +1,15 @@
+FROM docker:24
+
+RUN apk add bash git nodejs npm
+
+WORKDIR /app
+
+COPY package.json /app/
+
+RUN npm install
+
+COPY index.js /app/
+
+COPY run.sh /run.sh
+
+ENTRYPOINT ["/usr/bin/node", "/app/index.js"]
